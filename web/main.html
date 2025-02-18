@@ -1,0 +1,65 @@
+<!-- CDN Picnic Css -->
+<link href="
+https://cdn.jsdelivr.net/npm/picnic@7.1.0/picnic.min.css
+" rel="stylesheet">
+
+<!-- eel.js file (formality) -->
+<script type="text/javascript" src="../eel.js"></script>
+
+
+<!-- Js function -->
+<script type="text/javascript">
+  //function that takes data from the user
+  function callPython() {
+    let number2 = document.getElementById('number').value;
+    let booktitle2 = document.getElementById('booktitle').value;
+    let author2 = document.getElementById('author').value;
+    let isbn2 = document.getElementById('isbn').value;
+
+    //call python registration function
+    eel.registration(number2,booktitle2,author2,isbn2)
+
+  }
+
+//takes input from the user
+async function callExtract() {
+
+
+     let word_to_search = document.getElementById('search').value;
+     //call python extraction function
+     document.getElementById('prova').innerText = await eel.extraction(word_to_search)();
+
+
+  }
+
+</script>
+
+
+<!-- Main Div -->
+<div class="flex two center demo">
+  <div><span>
+
+    <h3>Year</h3><input type="text" placeholder="Book year" id="number">
+    <h3>Book Title</h3><input type="text" placeholder="Book title" id="booktitle">
+    <h3>Author</h3><input type="text" placeholder="Book author" id="author">
+    <h3>ISBN</h3><input type="text" placeholder="Code" id="isbn">
+    <h3></h3><button onclick="callPython()" >Register your book </button>
+    <h3></h3>
+
+
+    <article class="card">
+       <header>
+        <h3>Find a book</h3><input type="text" placeholder="search..." id="search">
+        <button onclick="callExtract()" >🔍</button>
+       </header>
+    </article>
+
+    <table>
+     <tr>
+       <td style="font-family: Arial" id="prova"  ></td>
+     </tr>
+   </table>
+
+  </span></div>
+
+</div>
