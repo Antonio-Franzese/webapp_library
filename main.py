@@ -1,9 +1,6 @@
 #I import the libraries that allow it to work
 import eel
 import os
-import pathlib
-
-
 
 #I make the function callable from javascript
 @eel.expose
