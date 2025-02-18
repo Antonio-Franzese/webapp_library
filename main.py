@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 #I import the libraries that allow it to work
 import eel
 import os
