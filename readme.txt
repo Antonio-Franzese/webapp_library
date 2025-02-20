@@ -11,4 +11,5 @@ Windows
 1) go to the program folder
 2) python main.py
 
-
+For the eel library
+pip install Eel
