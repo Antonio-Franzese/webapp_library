@@ -3,6 +3,12 @@
 https://cdn.jsdelivr.net/npm/picnic@7.1.0/picnic.min.css
 " rel="stylesheet">
 
+<!-- CDN animate.style -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
 <!-- eel.js file (formality) -->
 <script type="text/javascript" src="../eel.js"></script>
 
@@ -43,14 +49,14 @@ async function callExtract() {
     <h3>Book Title</h3><input type="text" placeholder="Book title" id="booktitle">
     <h3>Author</h3><input type="text" placeholder="Book author" id="author">
     <h3>ISBN</h3><input type="text" placeholder="Code" id="isbn">
-    <h3></h3><button onclick="callPython()" >Register your book </button>
+    <h3></h3><button onclick="callPython()" class="animate__animated animate__shakeX" >Register your book </button>
     <h3></h3>
 
 
     <article class="card">
        <header>
         <h3>Find a book</h3><input type="text" placeholder="search..." id="search">
-        <button onclick="callExtract()" >🔍</button>
+        <button onclick="callExtract()" class="animate__animated animate__flip">🔍</button>
        </header>
     </article>
 
