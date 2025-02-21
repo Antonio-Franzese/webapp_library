@@ -32,4 +32,4 @@ def extraction(word):
 # start the main.html file
 dirname = os.path.dirname(__file__)
 eel.init(os.path.join(dirname, "web/"))
-eel.start('main.html',port=8000)
+eel.start('main.html',port=80)
